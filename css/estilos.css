@@ -41,10 +41,9 @@ span{
 }
 button{
     display: block;
-    background: var(--grey);
+    background: var(--negro);
     text-transform: uppercase;
     width: 100%;
-    max-width: 300px;
     border: none;
     padding: 15px;
     border-radius: 10px;
@@ -71,17 +70,40 @@ button{
 }
 .btn_inicio{
     background-color: var(--blanco);
-    width: 408px;
-    height: 100px;
     border-radius: 100px;
     font-family: "Dosis";
-    font-size: 60px;
+    width: 408px;
+    height: 100px;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: none;
+    color: var(--violeta);
+}
+.btn_continuar{
+    background-color: var(--blanco);
+    border-radius: 100px;
+    font-family: "Dosis";
+    width: 450px;
+    height: 100px;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: none;
+    color: var(--violeta);
+}
+.btn_volver{
+    background-color: var(--blanco);
+    border-radius: 100px;
+    font-family: "Dosis";
+    width: 808px;
+    height: 100px;
+    font-size: 48px;
     font-weight: 600;
     text-transform: none;
     color: var(--violeta);
 }
 .usuario_elige h1{
     font-size: 61px;
+    stroke: none;
 }
 .usuario_elige ul{
     list-style: none;
@@ -135,10 +157,35 @@ button{
 }
 .computador_elige h2{
     font-size: 61px;
-    -webkit-text-stroke: none;
+    margin right: 100px;
+}
+.computador_elige h1{
+    font-family: "Dosis";
+    font-size: 31px;
+    font-weight: 400;
+    text-transform: none;
+    color: var(--violeta);
+    align-content: center;
+    
+
+}
+.resultado{
+    align-content: center;
 }
 .resultado h1{
     font-size: 170px;
+    align-content: center;
+    margin-bottom: 50px;
+}
+.resultado h2{
+    font-family: "Dosis";
+    font-weight: 400;
+    align-content: center;
+    margin-bottom: 50px;
+}
+.btn_volver{
+    width: 500px;
+    height: 100px;
 }
 @keyframes anim_sprites {
     0%{
