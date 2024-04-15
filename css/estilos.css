@@ -1,29 +1,48 @@
+@font-face {
+    font-family: 'arkhip';
+    src: url('/fonts/arkhip.otf') format('woff2'),
+         url('fonts/arkhip.otf') format('woff');
+    
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800
+
+.dosis-<uniquifier> {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+    font-family: 'arkhip', Arial, sans-serif; 
+}
 :root{
 box-sizing: border-box;
-font-family: sans-serif;
---darkblue: #121d50;
---lightcyan: #cdd7e1;
---blue:#007bff;
---grey:#b4b4b5;
+--negro: #17161F;
+--blanco: #ffffff;
+--violeta:#E681F3;
+--verde:#C3ED28;
 
 }
 body{
-background: var(--darkblue);
+background: var(--negro);
 }
 .contenedor{
     width: 1000px;
     margin: 20px auto;
-    background: var(--lightcyan);
     padding: 40px;
     border-radius: 30px;
-    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.8);
-    text-align: center;
+    color: var(--violeta);
+span{
+    color: var(--verde);
+}
+    
 }
 button{
     display: block;
     background: var(--grey);
     text-transform: uppercase;
-    color: #333;
     width: 100%;
     max-width: 300px;
     border: none;
@@ -32,20 +51,56 @@ button{
     cursor: pointer;
     margin: 0 auto;
 }
+.inicio h1{
+    font-family: arkhip;
+    font-size: 170px;
+    line-height: 50px;
+}
+.inicio h1:nth-child(2){
+    color: var(--verde);
+}
+.inicio span{
+    color: var(--blanco);
+}
 
-.usuario_elige{
-
+.inicio h2{
+    font-family: "Dosis";
+    margin-left: 370px;
+    font-weight: 400;
+    margin-bottom: 62px;
+}
+.btn_inicio{
+    background-color: var(--blanco);
+    width: 408px;
+    height: 100px;
+    border-radius: 100px;
+    font-family: "Dosis";
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: none;
+    color: var(--violeta);
+}
+.usuario_elige h1{
+    font-size: 61px;
 }
 .usuario_elige ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 0;
+    padding: 0;  
 }
 .usuario_elige ul li{
     width: 300px;
     transition: all 300ms;
+   
+}
+.usuario_elige ul li button{
+    font-family: "Dosis";
+    font-size: 31px;
+    font-weight: 400;
+    text-transform: none;
+    color: var(--violeta);
 }
 .usuario_elige ul li:hover{
     transform: scale(1.2);
@@ -60,17 +115,16 @@ button{
     height: 300px;
     margin-bottom: 10px;
     border-radius: 10px;
-    background: #000;
 }
 .usuario_elige ul li .animacion_papel, .computador_elige .animacion_papel{
-    background: url(../imgs/sprite_papel.png);
+    background: url(../images/papel.png);
 
 }
 .usuario_elige ul li .animacion_tijera, .computador_elige .animacion_tijera{
-    background: url(../imgs/sprite_tijeras.png);
+    background: url(../images/Tijera.png);
 }
 .usuario_elige ul li .animacion_piedra, .computador_elige .animacion_piedra{
-    background: url(../imgs/sprite_piedra.png);
+    background: url(../images/roca.png);
 }
 .computador_elige .animacion_papel, .computador_elige .animacion_tijera, .computador_elige .animacion_piedra{
     animation: anim_sprites 1500ms steps(23) alternate infinite;
@@ -79,7 +133,13 @@ button{
     margin: 0 auto;
     border-radius: 10px;
 }
-
+.computador_elige h2{
+    font-size: 61px;
+    -webkit-text-stroke: none;
+}
+.resultado h1{
+    font-size: 170px;
+}
 @keyframes anim_sprites {
     0%{
         background-position: 0 0;

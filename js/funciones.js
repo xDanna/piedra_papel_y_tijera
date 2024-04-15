@@ -56,20 +56,20 @@ document.addEventListener("DOMContentLoaded", function () {
         if ((u == "piedra" && c == "piedra") ||
             (u == "papel" && c == "papel") ||
             (u == "tijera" && c == "tijera")) {
-            txtResultado.innerHTML ="Es un empate.";
+            txtResultado.innerHTML ="EMPATE.";
             txtSubResultado.innerHTML =`El usuario eligió ${u} y el computador ${c}`;
         } else if (
             (u == "piedra" && c == "tijera") ||
             (u == "papel" && c == "piedra") ||
             (u == "tijera" && c == "papel")) {
-            txtResultado.innerHTML ="¡El usuario gana!";
+            txtResultado.innerHTML ="¡GANASTE!";
             txtSubResultado.innerHTML =`${u} gana a ${c}`;
         } else if (
             (u == "piedra" && c == "papel") ||
             (u == "papel" && c == "tijera") ||
             (u == "tijera" && c == "piedra")
         ) {
-            txtResultado.innerHTML ="¡El usuario pierde!";
+            txtResultado.innerHTML ="¡PERDISTE!";
             txtSubResultado.innerHTML =`${c} gana a ${u}`;
         }
     }
